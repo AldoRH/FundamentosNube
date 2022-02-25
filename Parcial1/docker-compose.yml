@@ -1,0 +1,15 @@
+version: '3'
+services:
+
+  servidordb2:
+      image: mariadb:10.7.1
+      container_name: servidordb2
+      environment:
+        - MYSQL_ROOT_PASSWORD=goku333
+      volumes:
+        - ./db:/var/lib/mysql
+        - ./db_config:/etc/mysql/conf.d
+      ports:
+        - 3335:3306
+
+    
