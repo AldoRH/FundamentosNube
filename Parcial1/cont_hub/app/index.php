@@ -2,7 +2,7 @@
 
 <body>
 <?php
-$enlace = mysqli_connect("host.docker.internal", "root", "goku333", "clase","3335");
+$enlace = mysqli_connect("ls-352301b0959b08b50b7bb9ccf252443c9381196a.cspmoxwykens.us-east-2.rds.amazonaws.com", "dbmasteruser", "Goku12345", "dbclase","3306");
 
 if (!$enlace) {
     echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
